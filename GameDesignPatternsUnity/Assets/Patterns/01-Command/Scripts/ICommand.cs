@@ -1,11 +1,14 @@
-public interface ICommand
+namespace CommandPattern
 {
-    float GetExecutionTime();
+    public interface ICommand
+    {
+        float GetExecutionTime();
 
-    MoveDirection GetMoveDirection();
-    void Execute();
+        MoveDirection GetMoveDirection();
+        void Execute();
 
-    void Undo();
+        void Undo();
     
-    string ToString();
+        string ToString();
+    }
 }

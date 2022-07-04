@@ -1,16 +1,20 @@
 using UnityEngine;
 
-public class BugTester : MonoBehaviour
+namespace FlyweightPattern
 {
-	//Public Fields
-	public BugBase bug;
-	
-	#region Public methods
-    
-	public void SetupBugBase(BugBase bug)
+	public class BugTester : MonoBehaviour
 	{
-		this.bug = bug;
-	}
+		//Public Fields
+		public BugBase bug;
 	
-	#endregion
+		#region Public methods
+    
+		public void SetupBugBase(BugBase bug)
+		{
+			this.bug = bug;
+		}
+	
+		#endregion
+	}
 }
+

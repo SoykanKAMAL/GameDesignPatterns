@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public class HeavyBug : BugBase
+namespace FlyweightPattern
 {
-    public HeavyBug ()
+    public class HeavyBug : BugBase
     {
-		this.BugData = new Data();
-        this.MoveSpeed = Random.Range(2f, 10f);
+        public HeavyBug ()
+        {
+            this.BugData = new Data();
+            this.MoveSpeed = Random.Range(2f, 10f);
+        }
     }
 }

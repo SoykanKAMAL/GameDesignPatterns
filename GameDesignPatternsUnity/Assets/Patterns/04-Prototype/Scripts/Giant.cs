@@ -1,23 +1,26 @@
 using UnityEngine;
 
-[System.Serializable]
-public class Giant : IEnemy
+namespace PrototypePattern
 {
-    public static int GiantCount = 0;
-    private GameObject _prefab;
-    public Giant (GameObject prefab)
+    [System.Serializable]
+    public class Giant : IEnemy
     {
-        _prefab = prefab;
-    }
+        public static int GiantCount = 0;
+        private GameObject _prefab;
+        public Giant (GameObject prefab)
+        {
+            _prefab = prefab;
+        }
 
-    public GameObject Clone()
-    {
-        GiantCount++;
-        return Object.Instantiate(_prefab);
-    }
+        public GameObject Clone()
+        {
+            GiantCount++;
+            return Object.Instantiate(_prefab);
+        }
 
-    public override string ToString()
-    {
-        return $"I am a Giant!";
+        public override string ToString()
+        {
+            return $"I am a Giant!";
+        }
     }
 }

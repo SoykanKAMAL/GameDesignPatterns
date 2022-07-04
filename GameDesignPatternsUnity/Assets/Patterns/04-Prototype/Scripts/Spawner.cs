@@ -1,19 +1,22 @@
 ﻿using UnityEngine;
 
-[System.Serializable]
-public class Spawner
+namespace PrototypePattern
 {
-    public IEnemy Prototype { get; }
-    public float SpawnTime { get; }
-    
-    public Spawner(IEnemy prototype, float spawnTime)
+    [System.Serializable]
+    public class Spawner
     {
-        Prototype = prototype;
-        SpawnTime = spawnTime;
-    }
+        public IEnemy Prototype { get; }
+        public float SpawnTime { get; }
     
-    public GameObject Spawn()
-    {
-        return Prototype.Clone();
+        public Spawner(IEnemy prototype, float spawnTime)
+        {
+            Prototype = prototype;
+            SpawnTime = spawnTime;
+        }
+    
+        public GameObject Spawn()
+        {
+            return Prototype.Clone();
+        }
     }
 }

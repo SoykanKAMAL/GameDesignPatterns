@@ -4,7 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+namespace CommandPattern
+{
+    public class UIManager : MonoBehaviour
 {
 	//Private Fields
 	private Queue<GameObject> commandUIs = new Queue<GameObject>();
@@ -112,4 +114,5 @@ public class UIManager : MonoBehaviour
 	#region Public methods
     
 	#endregion
+}
 }

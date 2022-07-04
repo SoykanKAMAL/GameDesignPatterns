@@ -1,8 +1,11 @@
 using UnityEngine;
 
-public interface IEnemy
+namespace PrototypePattern
 {
-    public GameObject Clone();
+    public interface IEnemy
+    {
+        public GameObject Clone();
     
-    public string ToString();
+        public string ToString();
+    }
 }

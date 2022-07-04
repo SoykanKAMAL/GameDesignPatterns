@@ -6,7 +6,9 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class EventSender : MonoBehaviour
+namespace ObserverPattern
+{
+	public class EventSender : MonoBehaviour
 {
 	// All event types
 	public static event EventHandler<string> EventHandlerWithParameters;
@@ -123,4 +125,5 @@ public class EventSender : MonoBehaviour
 	}
 	
 	#endregion
+}
 }

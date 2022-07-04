@@ -1,7 +1,10 @@
 using System;
 
-public abstract class BugBase
+namespace FlyweightPattern
 {
-    public float MoveSpeed;
-    public Data BugData;
+    public abstract class BugBase
+    {
+        public float MoveSpeed;
+        public Data BugData;
+    }
 }
