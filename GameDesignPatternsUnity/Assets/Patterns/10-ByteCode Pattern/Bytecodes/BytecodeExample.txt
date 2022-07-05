@@ -1,0 +1,18 @@
+//Input Format:
+//<Instruction>< ><value><;>
+//Usable Instructions:
+//#CHANGE_SPEED
+//#CHANGE_SIZE
+
+#INSTRUCTIONS_START;
+#CHANGE_SPEED 10;
+#CHANGE_SIZE 15;
+#INSTRUCTIONS_STOP;
+
+Some lines that will NOT be read
+#CHANGE_SIZE 300;
+Some lines that will NOT be read
+Some lines that will NOT be read
+Some lines that will NOT be read
+Some lines that will NOT be read
+Some lines that will NOT be read
